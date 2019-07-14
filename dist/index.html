@@ -145,7 +145,10 @@
                 </div>
                 <div class="row">
                     <div class="form-card col-md-6 col-md-offset-3">
-                        <form id="contact-form" method="POST" action="">
+
+                        <!-- TODO: Point the form to your backend mailer script -->
+
+                        <form id="contact-form" method="POST" action="/your/backend?mailer=your.email@example.com">
                             <div class="form-group has-info">
                                 <label class="control-label" for="full_name">
                                     Full Name
@@ -175,6 +178,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-xl-12 text-center">
+
+                                    <!-- TODO: Replace `YOUR_SITE_KEY` with your google recaptcha site key -->
+
                                     <button type="submit" class="btn btn-primary btn-block g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onSubmit">Submit</button>
                                 </div>
                             </div>
