@@ -1400,7 +1400,7 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
@@ -2626,7 +2626,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1164px
+        max-width: 1448px
     }
 }
 

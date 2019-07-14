@@ -1,0 +1,28 @@
+@media screen and (min-width: 1240px) {
+    nav.navbar {
+        padding: 0 calc(50% - 760px);
+    }
+}
+
+
+@media screen and (max-width: 1240px) {
+    section .center-block {
+        margin-top: 20%;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section .center-block {
+        margin-top: 0;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        position: relative;
+    }
+}

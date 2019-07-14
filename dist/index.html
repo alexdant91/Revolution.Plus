@@ -10,6 +10,20 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <!-- Custom styles -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <!-- Normalize -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <!-- Media -->
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+
+        <!-- Google reCaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+            function onSubmit(token) {
+                document.getElementById("contact-form").submit();
+            }
+        </script>
     </head>
 
     <body>
@@ -36,13 +50,13 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" class="active">Home</a>
+                                <a href="#home" class="active">Home</a>
                             </li>
                             <li>
-                                <a href="#">About us</a>
+                                <a href="#about-us">About us</a>
                             </li>
                             <li>
-                                <a href="#">Solutions</a>
+                                <a href="#solutions">Solutions</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
@@ -60,7 +74,7 @@
         <!-- END Navbar -->
 
         <!-- SECTION Header -->
-        <header>
+        <header style="background-image: url(img/header.png);" id="home" scrollspy>
             <div class="container full-height-90">
                 <div class="row full-height-90">
                     <div class="header-title">
@@ -72,6 +86,173 @@
             </div>
         </header>
         <!-- END Header -->
+
+        <!-- SECTION Content about-us -->
+        <section class="bg-gradient" id="about-us" scrollspy>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 max-height-450">
+                        <div class="center-block text-content">
+                            <h2>What we do</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat earum vero libero sequi praesentium, consectetur est iste unde architecto aliquid nemo iure laboriosam quam corporis veritatis alias ad maiores!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 max-height-450">
+                        <div class="image-content text-center">
+                            <img class="shadow-6" src="img/image_content_1.jpg" alt="City skyline" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Content about-us -->
+
+        <!-- SECTION Content solutions -->
+        <section id="solutions" scrollspy>
+            <div class="container">
+                <div class="row">
+                    <div class="text-content margin-vertical">
+                        <h2 class="text-center">Solutions</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3 class="card-title">EOSIO</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae totam placeat? Aperiam dignissimos officia corrupti, sit possimus minus labore eius dolore earum qui deserunt molestiae exercitationem doloremque laudantium adipisci.</p>
+                            <button class="btn btn-rounded bg-gradient">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3 class="card-title">EOSVC</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae totam placeat? Aperiam dignissimos officia corrupti, sit possimus minus labore eius dolore earum qui deserunt molestiae exercitationem doloremque laudantium adipisci.</p>
+                            <button class="btn btn-rounded bg-gradient">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Content solutions -->
+
+        <!-- SECTION Content contact-us -->
+        <section class="bg-gradient" id="contact-us" scrollspy>
+            <div class="container">
+                <div class="row">
+                    <div class="text-content margin-vertical">
+                        <h2 class="text-center">Contact Us</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-card col-md-6 col-md-offset-3">
+                        <form id="contact-form" method="POST" action="">
+                            <div class="form-group has-info">
+                                <label class="control-label" for="full_name">
+                                    Full Name
+                                </label>
+                                <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="nameFeedback" required>
+                                <div class="alert alert-info" id="nameFeedback">
+                                    What's your First and Last Name?
+                                </div>
+                            </div>
+                            <div class="form-group has-info">
+                                <label class="control-label" for="email">
+                                    Email
+                                </label>
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailFeedback" required>
+                                <div class="alert alert-info" id="emailFeedback">
+                                    What's your working email?
+                                </div>
+                            </div>
+                            <div class="form-group has-info">
+                                <label class="control-label" for="project">
+                                    Project info
+                                </label>
+                                <textarea class="form-control" id="project" name="project" aria-describedby="projectFeedback" required></textarea>
+                                <div class="alert alert-info" id="projectFeedback">
+                                    Tell us something about your project
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-block g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onSubmit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Content contact-us -->
+
+        <!-- SECTION Footer -->
+        <footer class="footer footer-inverse" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-xs-center text-md-left">
+                        <h5 class="footer-title m-b-2">About</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="footer-link" href="#">News</a></li>
+                            <li><a class="footer-link" href="#">Careers</a></li>
+                            <li><a class="footer-link" href="#">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-xs-center text-md-left">
+                        <h5 class="footer-title m-b-2">Solutions</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="footer-link" href="#">EOSIO</a></li>
+                            <li><a class="footer-link" href="#">EOSVC</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-xs-center text-md-left">
+                        <h5 class="footer-title m-b-2">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="footer-link" href="#">Inquiries</a></li>
+                            <li><a class="footer-link" href="#">Media & Press</a></li>
+                            <li><a class="footer-link" href="#">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-xs-center text-md-left">
+                        <h5 class="footer-title m-b-2">Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="footer-link" href="#">Developers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-b-5">
+                    <div class="col-md-2">
+                        <a class="logo logo-3 hidden-xs hidden-sm" href="#">
+                            <img src="img/logo.png" alt="Revolution.plus Logo" style="height: 60px; width: auto;" />
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-xs-center text-md-left footer-title">
+                        <a class="footer-link" href="#">Legal</a>
+                    </div>
+                    <div class="col-md-2 text-xs-center text-md-left footer-title">
+                        <a class="footer-link" href="#">Privacy policy</a>
+                    </div>
+                    <div class="col-md-2 text-xs-center text-md-left footer-title">
+                        <a class="footer-link" href="#">Country site map</a>
+                    </div>
+                    <div class="col-md-2 text-xs-center text-md-left footer-title footer-social">
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="link-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="row text-xs-center m-t-5">
+                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                        <p class="tiny" style="margin: 0;">© Block.one <span>2019</span></p>
+                        <p class="tiny">Building a more secure and connected world</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
 
     </body>
 
