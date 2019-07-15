@@ -149,30 +149,30 @@
                         <!-- TODO: Point the form to your backend mailer script -->
 
                         <form id="contact-form" method="POST" action="/your/backend?mailer=your.email@example.com">
-                            <div class="form-group has-info">
+                            <div class="form-group has-default">
                                 <label class="control-label" for="full_name">
                                     Full Name
                                 </label>
                                 <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="nameFeedback" required>
-                                <div class="alert alert-info" id="nameFeedback">
+                                <div class="alert alert-custom" id="nameFeedback">
                                     What's your First and Last Name?
                                 </div>
                             </div>
-                            <div class="form-group has-info">
+                            <div class="form-group has-default">
                                 <label class="control-label" for="email">
                                     Email
                                 </label>
                                 <input type="email" class="form-control" id="email" name="email" aria-describedby="emailFeedback" required>
-                                <div class="alert alert-info" id="emailFeedback">
+                                <div class="alert alert-custom" id="emailFeedback">
                                     What's your working email?
                                 </div>
                             </div>
-                            <div class="form-group has-info">
+                            <div class="form-group has-default">
                                 <label class="control-label" for="project">
                                     Project info
                                 </label>
                                 <textarea class="form-control" id="project" name="project" aria-describedby="projectFeedback" required></textarea>
-                                <div class="alert alert-info" id="projectFeedback">
+                                <div class="alert alert-custom" id="projectFeedback">
                                     Tell us something about your project
                                 </div>
                             </div>
@@ -181,7 +181,7 @@
 
                                     <!-- TODO: Replace `YOUR_SITE_KEY` with your google recaptcha site key -->
 
-                                    <button type="submit" class="btn btn-primary btn-block g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onSubmit">Submit</button>
+                                    <button type="submit" class="btn bg-gradient btn-block g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onSubmit">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -192,7 +192,7 @@
         <!-- END Content contact-us -->
 
         <!-- SECTION Footer -->
-        <footer class="footer footer-inverse" id="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 text-xs-center text-md-left">

@@ -181,6 +181,18 @@ section .max-height-450 {
     padding: 30px;
 }
 
+.form-control:focus {
+    border-color: #e5009f;
+}
+
+.form-control:focus~.alert-custom {
+    border-color: #e5009f;
+}
+
+.control-label {
+    color: #e5009f !important;
+}
+
 footer {
     padding: 80px calc(50vw - 550px) 0 !important;
 }
