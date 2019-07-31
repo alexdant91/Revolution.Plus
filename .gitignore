@@ -61,4 +61,5 @@ typings/
 .next
 
 # Configuration files
+.DS_Store/
 .DS_Store

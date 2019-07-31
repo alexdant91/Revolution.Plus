@@ -209,12 +209,65 @@ footer .footer-social a {
     margin: 0 1px;
 }
 
+.team-item .image {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: top center;
+    background-size: cover;
+}
+
+.team-item .name {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0 0 0;
+    font-weight: 600;
+}
+
+.team-item .description {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.partner-logo img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 /** 
 * SECTION Utils
 */
 
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    opacity: 0.2;
+    /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s;
+}
+
+img.grayscale:hover {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s;
+}
+
 .margin-vertical {
-    margin: 30px 0 40px 0;
+    margin: 30px 0 60px 0;
 }
 
 .text-center {
