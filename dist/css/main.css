@@ -214,7 +214,7 @@ footer .footer-social a {
     margin: auto;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 42%;
     background-position: top center;
     background-size: cover;
 }
@@ -223,12 +223,32 @@ footer .footer-social a {
     text-align: center;
     font-size: 28px;
     margin: 20px 0 0 0;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .team-item .description {
     text-align: center;
     margin: 5px 0 0 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.team-item .content {
+    margin: 13px 0px;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    padding: 0 10px;
+}
+
+.team-item .social {
+    text-align: center;
+}
+
+.team-item .social a {
+    text-decoration: none;
+    color: white;
+    margin: 0 3px;
 }
 
 .partner-logo img {
